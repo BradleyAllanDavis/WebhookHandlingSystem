@@ -34,7 +34,7 @@ public class WebhookController {
                 log.warn("signature does not match!");
             }
         } catch (Exception e) {
-            log.error("exception: ", e);
+            log.error("exception handling webhook: ", e);
         }
         return ResponseEntity.ok()
                 .build();

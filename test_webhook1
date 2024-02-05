@@ -1,0 +1,11 @@
+{
+  "signature": "1450eae9f418753fb70f361f638d66a7b8f37c1250e2e482f84d2d9fc33edba4",
+  "data": {
+    "id": "2d385ccc-18dd-4944-977a-b803092c5302",
+    "type": "deposit",
+    "asset": "USD",
+    "cents": "100001",
+    "status": "settled",
+    "updated_at": 1706598225
+  }
+}

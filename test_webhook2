@@ -1,0 +1,11 @@
+{
+  "signature": "5345f4fc841fa9338da903cc440fe721535e1b78eace1afc00a506fe25b6878b",
+  "data": {
+    "id": "2d385ccc-18dd-4944-977a-b803092c5302",
+    "type": "deposit",
+    "asset": "USD",
+    "cents": "100001",
+    "status": "pending",
+    "updated_at": 1706598215
+  }
+}

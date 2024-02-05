@@ -7,6 +7,9 @@
 3. Run `mvn exec:java` to run application
 4. Uninstall Nix `/nix/nix-installer uninstall`
 
-## Future TODOs
-- Add queue capacity
-- Add thread pool
+## Future TODOs/Enhancements
+- Add unit tests
+- Whitelist/allowlist IP addresses of webhook providers to prevent DoS attacks
+- Migrate from in-memory to actual DB
+- Migrate from in-memory queue to Kafka
+- Add thread pool for queue

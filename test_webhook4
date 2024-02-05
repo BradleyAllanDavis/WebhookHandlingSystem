@@ -1,0 +1,11 @@
+{
+  "signature": "9acc026131af8786d381733bc2e9056aa9c42ed90d3ce9e9788afdfc11c9e046",
+  "data": {
+    "id": "2d385ccc-18dd-4944-977a-b803092c5302",
+    "type": "deposit",
+    "asset": "USD",
+    "cents": "100001",
+    "status": "reversed",
+    "updated_at": 1706598240
+  }
+}

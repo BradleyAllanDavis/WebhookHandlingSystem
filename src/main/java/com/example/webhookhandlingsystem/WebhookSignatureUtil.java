@@ -27,7 +27,7 @@ public class WebhookSignatureUtil {
                                    String signature) {
         boolean signatureMatches = false;
         try {
-            Map<String, Object> dataMap = objectMapper.convertValue(data, new TypeReference<Map<String, Object>>() {});
+            Map<String, Object> dataMap = objectMapper.convertValue(data, new TypeReference<>() {});
             String dataString = prepareStringToSign(dataMap);
 
             Mac sha256Hmac = Mac.getInstance(HMAC_SHA256_ALGORITHM);
@@ -39,7 +39,7 @@ public class WebhookSignatureUtil {
 
             signatureMatches = computedSignature.equals(signature);
         } catch (Exception e) {
-            log.error("exception: ", e);
+            log.error("exception verifying signature: ", e);
         }
         return signatureMatches;
     }
@@ -90,7 +90,9 @@ public class WebhookSignatureUtil {
         return result;
     }
 
-    private void flatten(Map<String, Object> map, String parentKey, Map<String, Object> result) {
+    private void flatten(Map<String, Object> map,
+                         String parentKey,
+                         Map<String, Object> result) {
         for (Map.Entry<String, Object> entry : map.entrySet()) {
             String key = parentKey.isEmpty() ? entry.getKey() : parentKey + "." + entry.getKey();
             Object value = entry.getValue();

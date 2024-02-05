@@ -77,8 +77,18 @@ const webhook_data2 = {
     updated_at: 1706598215
 };
 
+const webhook_data4 = {
+    id: "2d385ccc-18dd-4944-977a-b803092c5302",
+    type: "deposit",
+    asset: "USD",
+    cents: "100001",
+    status: "reversed",
+    updated_at: 1706598240
+};
+
 const secretKey = 'my_secret_key';
 // const payload = prepareWebhookPayload(obj, secretKey);
 // const payload = prepareWebhookPayload(webhook_data1, secretKey);
-const payload = prepareWebhookPayload(webhook_data2, secretKey);
+// const payload = prepareWebhookPayload(webhook_data2, secretKey);
+const payload = prepareWebhookPayload(webhook_data4, secretKey);
 console.log(JSON.stringify(payload, null, 2));
